@@ -1,0 +1,108 @@
+/* 레이아웃 *//*#FFAB50*/
+body {background: #000;}
+section{position: relative; height: 100vh; margin-top: 300px;}
+#section1{margin-top: 0;}
+
+/* 내비 */
+header {position: fixed; top: 0; left: 0; right: 0; background: rgba(0,0,0,0.3); z-index: 2;}
+header nav ul {display: flex; justify-content: center;}
+header nav ul li {margin: 15px 20px; list-style-type: none;}
+header nav ul li a{font-size: 16px; color: #fff; font-weight: 600;}
+
+/* 홈 */
+.home{background: url(../img/home.jpg) center center; background-size: cover; position: relative;}
+.home h2{font-size: 36px; background: rgba(0,0,0,0.5); display: inline-block; color: #FFA950; padding: 10px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.home h2 img{display: block; border: 10px solid #FFAB50; box-sizing: border-box; width: 100%;}
+.home a{position: absolute; bottom: 5%; left: 50%; transform: translate(-50%, -50%); display: block; width: 30px;width: 30px;} 
+
+/* 클래스 */
+.class{background: #000;}
+.class .class_list{position: relative; height: 100%;}
+.class .class_list .slide_title{font-size: 4vw; position: absolute; left: 25%; top: 25%; color: #fff; z-index: 3; font-weight: 600;}
+.class .class_list .slide_num{font-size: 10vw; position: absolute; left: 20%; top: 10%; color: #fff; opacity: 0.1;}
+.class .class_list iframe{position: absolute; top: 40%; left: 10%; width: 40%; height: 38%;}
+.class .class_list .slide_img div:nth-child(1){width: 615px; height: 384px; position: absolute; left: 55%; top: 15%;}
+.class .class_list .slide_img div:nth-child(2){width: 384px; height: 480px; position: absolute; left: 70%; top: 40%;}
+.class .class_list.class_hiphop .slide_img div:nth-child(1){background: url(../img/hiphop01.jpg);background-size: cover;z-index: 1;}
+.class .class_list.class_hiphop .slide_img div:nth-child(2){background: url(../img/hiphop02.jpg);background-size: cover;z-index: 2;}
+.class .class_list.class_locking .slide_img div:nth-child(1){background: url(../img/locking01.jpg);background-size: cover;}
+.class .class_list.class_locking .slide_img div:nth-child(2){background: url(../img/locking02.jpg);background-size: cover;}
+.class .class_list.class_popping .slide_img div:nth-child(1){background: url(../img/popping01.jpg);background-size: cover;}
+.class .class_list.class_popping .slide_img div:nth-child(2){background: url(../img/popping02.jpg);background-size: cover;}
+.prev{position: absolute; left: 2%; top: 50%; transform: translateY(-50%); z-index: 5;}
+.prev a, .next a{display: block; width: 50px; height: 80px; opacity: 0.1;}
+.next{position: absolute; right: 2%; top: 50%; transform: translateY(-50%); z-index: 5;}
+.swiper-pagination-bullet{background: #FFAB50;}
+.swiper-pagination-bullets{bottom: 8% !important;}
+
+/* 워크샵 */
+.workshop{color: #fff;background: url(../img/bg.png); position: relative;}
+.workshop .bg{width: 50%; height: 100vh; float: right;}
+.workshop .bg .bg1{width: 100%; height: 50%; float: left; overflow: hidden;}
+.workshop .bg .bg2{width: 50%;height: 50%; float: left; overflow: hidden;}
+.workshop .bg .bg3{width: 50%;height: 50%; float: left; overflow: hidden;}
+.workshop .bg .bg1 div{background: url(../img/workshop01.jpg) center center; background-size: cover;height: 100%;}
+.workshop .bg .bg2 div{background: url(../img/workshop02.jpg) center center; background-size: cover;height: 100%;}
+.workshop .bg .bg3 div{background: url(../img/workshop03.jpg) center center; background-size: cover;height: 100%;}
+.workshop h2{font-size: 4vw; position: absolute; top: 33%; left: 10%; font-weight: 600;}
+.workshop p{font-size: 2vw; position: absolute; top: 48%; left: 10%;}
+.workshop p span{font-family: 'Noto Sans KR', sans-serif;}
+
+/* 활동 */
+.performance{height: 100%; width: 100vw;}
+.performance .container{overflow: hidden; float:left; width: 47%; height: 92%; position: relative; margin-left: 2%; margin-top: 2%;} 
+.performance .container:last-child{float: right; margin-right: 2%;} 
+.performance .concert{width: 100%; height: 100%; background: url(../img/concert.jpg) center center; background-size: cover; float: left; position: relative; transition: all 0.5s ease-in-out;} 
+.performance .concert:hover{transform: scale(1.05);} 
+.performance .concert .play{width: 15%; height: 15%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.performance .concert .play .st0{fill: #fff; opacity: 0.3;}
+.performance .concert .play .st1{fill: #fff;}
+.performance .video{width: 100%; height: 100%; background: url(../img/video.jpg) center center; background-size: cover; float: left; transition: all 0.5s ease-in-out; position: relative;}
+.performance .video:hover{transform: scale(1.05);}
+.performance .video .play{width: 15%; height: 15%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.performance .video .play .st0{fill: #fff; opacity: 0.3;}
+.performance .video .play .st1{fill: #fff;}
+
+/* 가입 */
+.join{text-align: center; color: #fff; font-size: 18px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.join h2{font-size: 18px;}
+.join strong{display: block; font-weight: normal;}
+.join em{display: block; font-family: 'Noto Sans KR', sans-serif;}
+.join a{display: inline-block; width: 30px; height: 30px;margin-top: 5px;}
+.join a:last-child{margin-left: 5px;}
+
+/* 애니메이션 */
+header nav ul li a{transition: all 0.3s ease;}
+header nav ul li a:hover{color: #FFAB50;}
+
+.home a{animation: arrow 2s infinite;} 
+@keyframes arrow{
+    0%{transform: translateY(-50%);}
+    50%{transform: translateY(0);}
+    100%{transform: translateY(-50%);}
+}
+
+.class .class_list .slide_title{opacity:0; transition: all 0.5s 0.6s ease; transform: translateY(-50%);}
+.class .class_list .slide_num{opacity:0; transition: all 0.5s 0.2s ease; transform: translateY(-50%);}
+.class .class_list iframe{opacity:0; transition: all 0.5s 0.9s ease; transform: translateX(-50%);}
+.class .class_list .slide_img div:nth-child(1){opacity:0; transition: all 0.5s 1s ease; transform: translateX(50%); transform: scale(1.1);}
+.class .class_list .slide_img div:nth-child(2){opacity:0; transition: all 0.5s 1.2s ease; transform: translateY(50%);}
+.class .swiper-slide-active .class_list.show .slide_title{opacity:1;transform: translate(0);}
+.class .swiper-slide-active .class_list.show .slide_num{opacity:0.1;transform: translate(0);}
+.class .swiper-slide-active .class_list.show iframe{opacity:1;transform: translate(0);}
+.class .swiper-slide-active .class_list.show .slide_img div:nth-child(1){opacity:1;transform: translate(0);}
+.class .swiper-slide-active .class_list.show .slide_img div:nth-child(2){opacity:1;transform: translate(0);}
+
+.workshop .bg div div{transition: all 0.3s ease;}
+.workshop .bg div div:hover{transform: scale(1.1);}
+
+.performance span.top{height: 6px; width: 0%; background: #FFAB50; display: block; position: absolute; top: 0; left: 0; transition: all 0.3s ease;}
+.performance span.right{width: 6px; height: 0%; background: #FFAB50; display: block; position: absolute; top: 0; right: 0; transition: all 0.3s 0.3s ease;}
+.performance span.bottom{height: 6px; width: 0%; background: #FFAB50; display: block; position: absolute; bottom: 0; right: 0; transition: all 0.3s ease;}
+.performance span.left{width: 6px; height: 0%; background: #FFAB50; display: block; position: absolute; bottom: 0; left: 0; transition: all 0.3s 0.3s ease;}
+.performance .container:hover span.top{width: 100%;}
+.performance .container:hover span.right{height: 100%;}
+.performance .container:hover span.bottom{width: 100%;}
+.performance .container:hover span.left{height: 100%;}
+.performance .play{opacity: 0; transition: all 0.3s ease;}
+.performance .container:hover .play{opacity: 1;}
